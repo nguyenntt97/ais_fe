@@ -1,22 +1,11 @@
-import React, { useEffect, useState } from "react";
-import NavBar from "../components/NavBar";
+import React from "react";
+import CompoundNavBar from "../components/CompoundNavBar";
 import FeaturingLanding from "../components/FeaturingLanding"
 import SupervisorLanding from "../components/SupervisorLanding"
-import StickyNavBar from "../components/StickyNavBar";
 
 export default function Landing() {
     // const [deviceSize, changeDeviceSize] = useState(window.innerWidth);
-    const [scrollTop, setScrollTop] = useState(0);
 
-    useEffect(() => {
-        function onScroll() {
-            let currentPosition = window.pageYOffset; // or use document.documentElement.scrollTop;
-            setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
-        }
-
-        window.addEventListener("scroll", onScroll);
-        return () => window.removeEventListener("scroll", onScroll);
-    }, [scrollTop]);
 
     // useEffect(() => {
     //     const resizeW = () => changeDeviceSize(window.innerWidth);
@@ -26,9 +15,7 @@ export default function Landing() {
 
     return (
         <>
-            <div className="absolute w-full z-20">
-                {(scrollTop < 200) ? <NavBar /> : <StickyNavBar />}
-            </div>
+            <CompoundNavBar/>
             <main>
                 <div id="carouselExampleCaptions" className="carousel slide relative" data-bs-ride="carousel">
                     <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
