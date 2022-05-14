@@ -5,9 +5,11 @@ import NEWS_QUERY from "../queries/news/news";
 import { getFullPath } from "../utils/my_utils";
 
 const genNewsItem = ({ data: { newsArticles } }) => {
+  console.log(newsArticles);
   return newsArticles.data.map((a) => {
     let title = a.attributes.title;
     let summary = a.attributes.summary;
+    let public_cover = a.attributes.public_thumbnail;
     let cover = a.attributes.thumbnail
       ? a.attributes.thumbnail.data.attributes.url
       : null;
@@ -18,7 +20,7 @@ const genNewsItem = ({ data: { newsArticles } }) => {
           <div className="overflow-hidden w-full h-64 md:w-56 md:h-64 md:rounded-l-lg lg:w-64 lg:h-42">
             <img
               className="w-full h-full object-cover object-top group-hover:scale-125 drop-shadow-lg transition duration-300 ease-in-out"
-              src={getFullPath(cover)}
+              src={public_cover ? public_cover : getFullPath(cover)}
               alt=""
             />
           </div>
