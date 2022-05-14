@@ -1,58 +1,6 @@
 import React from "react";
 import CustomTabs from "../components/CustomTabs";
 import NavBar from "../components/NavBar";
-import NewsSection from "../components/NewsSection";
-
-const SAMPLES = [
-    {
-        title: "ＳＩ２０２１で２つの賞を受賞",
-        summary: "院生の久郷君と高橋君がSI2021で発表した論文で優秀講演賞を受賞しました。",
-        time: "3 mins ago",
-        img: "https://i0.wp.com/www.aislab.org/wp-content/uploads/2022/03/1646016508784.jpg?resize=768%2C576"
-    },
-    {
-        title: "博士学位取得",
-        summary: "2021年10月2日にMiran LEEさんが博士号を取得しました！",
-        time: "3 hours ago",
-        img: "https://i2.wp.com/www.aislab.org/wp-content/uploads/2022/03/20211002_112821.jpg?resize=768%2C576"
-    },
-    {
-        title: "ＳＩ２０２１で２つの賞を受賞",
-        summary: "院生の久郷君と高橋君がSI2021で発表した論文で優秀講演賞を受賞しました。",
-        time: "3 mins ago",
-        img: "https://i0.wp.com/www.aislab.org/wp-content/uploads/2022/03/1646016508784.jpg?resize=768%2C576"
-    },
-    {
-        title: "博士学位取得",
-        summary: "2021年10月2日にMiran LEEさんが博士号を取得しました！",
-        time: "3 hours ago",
-        img: "https://i2.wp.com/www.aislab.org/wp-content/uploads/2022/03/20211002_112821.jpg?resize=768%2C576"
-    },
-    {
-        title: "ＳＩ２０２１で２つの賞を受賞",
-        summary: "院生の久郷君と高橋君がSI2021で発表した論文で優秀講演賞を受賞しました。",
-        time: "3 mins ago",
-        img: "https://i0.wp.com/www.aislab.org/wp-content/uploads/2022/03/1646016508784.jpg?resize=768%2C576"
-    },
-    {
-        title: "博士学位取得",
-        summary: "2021年10月2日にMiran LEEさんが博士号を取得しました！",
-        time: "3 hours ago",
-        img: "https://i2.wp.com/www.aislab.org/wp-content/uploads/2022/03/20211002_112821.jpg?resize=768%2C576"
-    },
-    {
-        title: "ＳＩ２０２１で２つの賞を受賞",
-        summary: "院生の久郷君と高橋君がSI2021で発表した論文で優秀講演賞を受賞しました。",
-        time: "3 mins ago",
-        img: "https://i0.wp.com/www.aislab.org/wp-content/uploads/2022/03/1646016508784.jpg?resize=768%2C576"
-    },
-    {
-        title: "博士学位取得",
-        summary: "2021年10月2日にMiran LEEさんが博士号を取得しました！",
-        time: "3 hours ago",
-        img: "https://i2.wp.com/www.aislab.org/wp-content/uploads/2022/03/20211002_112821.jpg?resize=768%2C576"
-    }
-]
 
 export default function Blog() {
     return (

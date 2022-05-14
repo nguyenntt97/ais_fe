@@ -5,7 +5,7 @@ import SupervisorLanding from "../components/SupervisorLanding"
 import StickyNavBar from "../components/StickyNavBar";
 
 export default function Landing() {
-    const [deviceSize, changeDeviceSize] = useState(window.innerWidth);
+    // const [deviceSize, changeDeviceSize] = useState(window.innerWidth);
     const [scrollTop, setScrollTop] = useState(0);
 
     useEffect(() => {
@@ -18,11 +18,11 @@ export default function Landing() {
         return () => window.removeEventListener("scroll", onScroll);
     }, [scrollTop]);
 
-    useEffect(() => {
-        const resizeW = () => changeDeviceSize(window.innerWidth);
-        window.addEventListener("resize", resizeW); // Update the width on resize
-        return () => window.removeEventListener("resize", resizeW);
-    });
+    // useEffect(() => {
+    //     const resizeW = () => changeDeviceSize(window.innerWidth);
+    //     window.addEventListener("resize", resizeW); // Update the width on resize
+    //     return () => window.removeEventListener("resize", resizeW);
+    // });
 
     return (
         <>

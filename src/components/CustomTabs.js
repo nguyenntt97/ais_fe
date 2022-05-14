@@ -79,10 +79,10 @@ export default function CustomTabs(props) {
         id="tabs-tab"
         role="tablist"
       >
-        {headers.map((h, i) => genTabHeader(h, i == 0))}
+        {headers.map((h, i) => genTabHeader(h, i === 0))}
       </ul>
       <div className="tab-content" id="tabs-tabContent">
-        {contents.map((c, i) => genTabContent(headers[i], c, i == 0))}
+        {contents.map((c, i) => genTabContent(headers[i], c, i === 0))}
       </div>
     </>
   );
