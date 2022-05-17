@@ -1,9 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import LangBtn from "./LangBtn";
+import NavButton from "./NavButton";
+import { AboutIcon, BlogIcon, HomeIcon, InternalIcon, ResearchIcon } from "./SvgIcons";
 
-export default function NavBarCore() {
-  let navigate = useNavigate();
+export default function NavBarCore(props) {
   let mobileMenu = React.createRef();
+  let menuColor = props.color? props.color : 'transparent';
 
   return (
     <div className="container flex flex-wrap justify-between items-center mx-auto">
@@ -19,9 +21,8 @@ export default function NavBarCore() {
       </a>
       <button
         data-collapse-toggle="mobile-menu"
-        onClick={()=>{
-            console.log("Hello")
-            mobileMenu.current.classList.toggle('hidden')
+        onClick={() => {
+          mobileMenu.current.classList.toggle("hidden");
         }}
         type="button"
         className="inline-flex items-center p-2 mx-3 text-sm text-white rounded-lg md:hidden hover:text-gray-500 hover:bg-white focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -54,132 +55,18 @@ export default function NavBarCore() {
           ></path>
         </svg>
       </button>
-      <div className="hidden bg-gray-700 md:bg-transparent w-full md:block md:w-auto" id="mobile-menu" ref={mobileMenu}>
-        <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
-          <div className="flex space-x-2 justify-center content-center">
-            <button
-              onClick={() => navigate("/")}
-              type="button"
-              data-mdb-ripple="true"
-              data-mdb-ripple-color="light"
-              className="block px-0.5 py-1.5 bg-transparent text-white font-sans font-semibold text-xs leading-tight uppercase md:hover:text-gray-300"
-            >
-              <svg
-                className="hidden w-7 h-7 md:inline pb-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                ></path>
-              </svg>
-              &nbsp;Home
-            </button>
-          </div>
-          <div className="flex space-x-2 justify-center content-center">
-            <button
-              onClick={() => navigate("/blog")}
-              type="button"
-              data-mdb-ripple="true"
-              data-mdb-ripple-color="light"
-              className="block px-0.5 py-1.5 bg-transparent text-white font-sans font-semibold text-xs leading-tight uppercase md:hover:text-gray-300"
-            >
-              <svg
-                className="w-7 h-7 inline pb-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                ></path>
-              </svg>
-              &nbsp;Blog
-            </button>
-          </div>
-          <div className="flex space-x-2 justify-center content-center">
-            <button
-              type="button"
-              data-mdb-ripple="true"
-              data-mdb-ripple-color="light"
-              className="block px-0.5 py-1.5 bg-transparent text-white font-sans font-semibold text-xs leading-tight md:hover:text-gray-300"
-            >
-              <svg
-                className="w-7 h-7 inline pb-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                ></path>
-              </svg>
-              &nbsp;Research
-            </button>
-          </div>
-          <div className="flex space-x-2 justify-center content-center">
-            <button
-              type="button"
-              data-mdb-ripple="true"
-              data-mdb-ripple-color="light"
-              className="block px-0.5 py-1.5 bg-transparent text-white font-sans font-semibold text-xs leading-tight md:hover:text-gray-300"
-            >
-              <svg
-                className="w-7 h-7 inline pb-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-              &nbsp;About
-            </button>
-          </div>
-          <div className="flex space-x-2 justify-center content-center">
-            <button
-              type="button"
-              data-mdb-ripple="true"
-              data-mdb-ripple-color="light"
-              onClick={() => (window.location.href = "https://api.aislab.tech")}
-              className="block px-0.5 py-1.5 bg-transparent text-white font-sans font-semibold text-xs leading-tight md:hover:text-gray-300"
-            >
-              <svg
-                className="w-7 h-7 inline pb-1"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
-                ></path>
-              </svg>
-              &nbsp;Internal
-            </button>
-          </div>
-          <div className="flex space-x-2 justify-center content-center">
+      <div
+        className={`hidden bg-${menuColor} w-full md:block md:w-auto`}
+        id="mobile-menu"
+        ref={mobileMenu}
+      >
+        <ul className="flex flex-col md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <NavButton name={"Home"} icon={HomeIcon} href={'/'}/>
+          <NavButton name={"News"} icon={BlogIcon} href={'/news'}/>
+          <NavButton name={"Research"} icon={ResearchIcon} href={'/research'}/>
+          <NavButton name={"About"} icon={AboutIcon} href={'/about'}/>
+          <NavButton name={"Internal"} icon={InternalIcon} href={'/internal'}/>
+          <div className="flex space-x-2 justify-center content-center py-2">
             <button
               type="button"
               className="inline-block px-5 py-0.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-gray-500 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
@@ -187,6 +74,7 @@ export default function NavBarCore() {
               Apply
             </button>
           </div>
+          <LangBtn langs={['EN', 'JP', 'VN']} cur_lang={0}/>
         </ul>
       </div>
     </div>
