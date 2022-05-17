@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import NavBarCore from "./NavBarCore";
+import NavBar from "./NavBar";
 import StickyNavBar from "./StickyNavBar"
 
 export default function CompoundNavBar() {
@@ -17,7 +17,7 @@ export default function CompoundNavBar() {
 
   return (
     <div className="absolute w-full z-20 mt-3">
-      {scrollTop < 200 ? <NavBarCore /> : <StickyNavBar />}
+      {scrollTop < 200 ? <NavBar /> : <StickyNavBar />}
     </div>
   );
 }

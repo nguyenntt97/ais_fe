@@ -43,7 +43,7 @@ export default function Landing() {
                     <div className="carousel-inner relative w-full h-[39rem] overflow-hidden">
                         <div className="carousel-item active relative float-left w-full ">
                             <div
-                                // src="https://pbs.twimg.com/media/DBIHmxZUAAQivT4?format=jpg&name=large"
+                                src="https://pbs.twimg.com/media/DBIHmxZUAAQivT4?format=jpg"
                                 className="block w-full h-[39rem] bg-round-table bg-no-repeat bg-cover bg-center brightness-[0.4]"
                                 alt="..."
                             />
@@ -53,9 +53,9 @@ export default function Landing() {
                             </div>
                         </div>
                         <div className="carousel-item relative float-left w-full">
-                            <img
+                            <div
+                                // src="https://img.upanh.tv/2022/05/05/DCvgtbJUAAAvZFc_auto_x2-min05a068b6047436f4.jpg"
                                 className="block w-full h-[39rem] bg-party bg-no-repeat bg-cover bg-center brightness-[0.4]"
-                                alt="..."
                             />
                             <div className="carousel-caption hidden md:block absolute text-center">
                                 <h5 className="text-xl">Prepare for your career</h5>
@@ -63,9 +63,8 @@ export default function Landing() {
                             </div>
                         </div>
                         <div className="carousel-item relative float-left w-full">
-                            <img
+                            <div
                                 className="block w-full h-[39rem] bg-group bg-no-repeat bg-cover bg-top brightness-[0.4]"
-                                alt="..."
                             />
                             <div className="carousel-caption hidden md:block absolute text-center">
                                 <h5 className="text-xl">True learning environment</h5>
