@@ -2,7 +2,7 @@ import React from "react";
 
 export var InternalIcon = (
   <svg
-    className="hidden w-7 h-7 inline pb-1"
+    className="hidden w-7 h-7 md:inline pb-1"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -19,7 +19,7 @@ export var InternalIcon = (
 
 export var AboutIcon = (
   <svg
-    className="hidden w-7 h-7 inline pb-1"
+    className="hidden w-7 h-7 md:inline pb-1"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -36,7 +36,7 @@ export var AboutIcon = (
 
 export var ResearchIcon = (
   <svg
-    className="hidden w-7 h-7 inline pb-1"
+    className="hidden w-7 h-7 md:inline pb-1"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ export var ResearchIcon = (
 
 export var BlogIcon = (
   <svg
-    className="hidden w-7 h-7 inline pb-1"
+    className="hidden w-7 h-7 md:inline pb-1"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
