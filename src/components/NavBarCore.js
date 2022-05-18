@@ -65,7 +65,7 @@ export default function NavBarCore(props) {
           <NavButton name={"News"} icon={BlogIcon} href={'/news'}/>
           <NavButton name={"Research"} icon={ResearchIcon} href={'/research'}/>
           <NavButton name={"About"} icon={AboutIcon} href={'/about'}/>
-          <NavButton name={"Internal"} icon={InternalIcon} href={'/internal'}/>
+          <NavButton name={"Internal"} icon={InternalIcon} href={'/internal/admin'}/>
           <div className="flex space-x-2 justify-center content-center py-2">
             <button
               type="button"
