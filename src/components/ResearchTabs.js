@@ -1,8 +1,9 @@
 import React from "react";
+import IndiTopicSection from "./IndiTopicSection";
 import NewsSection from "./NewsSection";
 
 const genTabHeader = (tabName, focused) => {
-  let tabId = tabName.toLowerCase();
+  let tabId = tabName[0].toLowerCase();
   return (
     <li className="nav-item" role="presentation">
       <a
@@ -28,14 +29,14 @@ const genTabHeader = (tabName, focused) => {
         aria-controls={`tabs-${tabId}`}
         aria-selected={focused ? "true" : "false"}
       >
-        {tabName}
+        {tabName[1]}
       </a>
     </li>
   );
 };
 
 const genTabContent = (tabName, comp, focused) => {
-  let tabId = tabName.toLowerCase();
+  let tabId = tabName[0].toLowerCase();
   return (
     <div
       className={`tab-pane fade ${focused ? "show active" : ""}`}
@@ -48,34 +49,31 @@ const genTabContent = (tabName, comp, focused) => {
   );
 };
 
-const DEFAULT_HEADERS = ["News", "Events", "Relax"];
+const DEFAULT_HEADERS = [
+  ["current", "On-going Topics"],
+  ["past", "Past Research"],
+];
 const DEFAULT_CONTENTS = [
   <>
     <h2 className="text-3xl font-bold mt-4 mb-12 text-center text-red-800">
-      Research news
+      Individual Topics
     </h2>
-    <NewsSection />
+    <IndiTopicSection />
   </>,
   <>
     <h2 className="text-3xl font-bold mt-4 mb-12 text-center text-red-800">
-      Lab. Events
+      Past Research
     </h2>
     <NewsSection />
-  </>,
-  <>
-    <h2 className="text-3xl font-bold mt-4 mb-12 text-center text-red-800">
-      Relax Moment
-    </h2>
-    Empty
   </>,
 ];
-export default function CustomTabs(props) {
+export default function ResearchTabs(props) {
   let headers = props.headers ? props.headers : DEFAULT_HEADERS;
   let contents = props.tabContents ? props.tabContents : DEFAULT_CONTENTS;
   return (
     <>
       <ul
-        className="justify-center nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
+        className="justify-center nav nav-tabs flex flex-col sm:flex-row flex-wrap list-none border-b-0 pl-0 mb-4"
         id="tabs-tab"
         role="tablist"
       >

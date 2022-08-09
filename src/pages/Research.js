@@ -3,6 +3,7 @@ import "../components/Animation/float_square.css";
 import "../components/Animation/hexagon.css";
 import CompoundNavBar from "../components/CompoundNavBar";
 import CustomTabs from "../components/CustomTabs";
+import ResearchTabs from "../components/ResearchTabs";
 
 export default function Research() {
   return (
@@ -80,7 +81,7 @@ export default function Research() {
           </div>
         </div>
         <section className="mb-32 text-gray-800 text-center">
-          <CustomTabs />
+          <ResearchTabs />
         </section>
       </main>
     </>
