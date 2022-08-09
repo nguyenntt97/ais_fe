@@ -42,8 +42,8 @@
 
 .circles li:nth-child(3) {
   left: 70%;
-  width: 20px;
-  height: 20px;
+  width: 120px;
+  height: 120px;
   animation-delay: 4s;
 }
 
@@ -78,8 +78,8 @@
 
 .circles li:nth-child(8) {
   left: 50%;
-  width: 25px;
-  height: 25px;
+  width: 250px;
+  height: 250px;
   animation-delay: 15s;
   animation-duration: 45s;
 }

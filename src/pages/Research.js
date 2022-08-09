@@ -1,5 +1,5 @@
 import React from "react";
-// import "../components/Animation/float_square.css";
+import "../components/Animation/float_square.css";
 import CompoundNavBar from "../components/CompoundNavBar";
 import CustomTabs from "../components/CustomTabs";
 
@@ -35,9 +35,9 @@ export default function Research() {
             </div>
           </div>
         </div>
-        <div class="p-10">
-          <div class="area">
-            <ul class="circles">
+        <div class="p-10 relative">
+          <div class="area -z-10">
+            <ul class="circles -z-10">
               <li></li>
               <li></li>
               <li></li>
@@ -50,14 +50,18 @@ export default function Research() {
               <li></li>
             </ul>
           </div>
-          <h1 className="text-5xl font-bold mt-4 mb-12 text-red-800">
+          <h1 className="text-5xl font-bold mt-4 mb-12 z-5 text-red-800">
             Research Themes
           </h1>
           <p class="text-xl font-light leading-relaxed mt-6 mb-4 text-gray-800">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
-            libero iste quod quibusdam maxime recusandae odit eveniet,
-            aspernatur culpa provident error molestiae vitae corporis in vero
-            est! Beatae, ipsum voluptatibus.
+            Interaction can take many forms. In our laboratory, we mainly focus
+            on human-to-human interaction, human-to-non-human interaction, and
+            non-human-to-human interaction via artificial systems (non-human
+            means anything that can interact with non-humans, including
+            machines, robots, animals, etc.). However, as the name of our
+            laboratory indicates, we study systems that apply interaction
+            technology, so the scope of our research is very broad, and there
+            are no restrictions on our research topics.
           </p>
         </div>
         <section className="mb-32 text-gray-800 text-center">

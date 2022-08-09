@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route exact path="/news" element={<Blog />} />
-      <Route exact path="/group" element={<Blog />} />
+      <Route exact path="/research" element={<Research />} />
       {/* <Route exact path="/login" component={Login} /> */}
       {/* <Route exact path="/register" component={Register} /> */}
       {/* <Navigate from="*" to="/" /> */}
