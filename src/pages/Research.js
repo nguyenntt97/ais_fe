@@ -1,5 +1,6 @@
 import React from "react";
 import "../components/Animation/float_square.css";
+import "../components/Animation/hexagon.css";
 import CompoundNavBar from "../components/CompoundNavBar";
 import CustomTabs from "../components/CustomTabs";
 
@@ -35,8 +36,8 @@ export default function Research() {
             </div>
           </div>
         </div>
-        <div class="p-10 relative">
-          <div class="area -z-10">
+        <div class="relative">
+          <div class="area -z-10 p-10">
             <ul class="circles -z-10">
               <li></li>
               <li></li>
@@ -50,19 +51,33 @@ export default function Research() {
               <li></li>
             </ul>
           </div>
-          <h1 className="text-5xl font-bold mt-4 mb-12 z-5 text-red-800">
-            Research Themes
-          </h1>
-          <p class="text-xl font-light leading-relaxed mt-6 mb-4 text-gray-800">
-            Interaction can take many forms. In our laboratory, we mainly focus
-            on human-to-human interaction, human-to-non-human interaction, and
-            non-human-to-human interaction via artificial systems (non-human
-            means anything that can interact with non-humans, including
-            machines, robots, animals, etc.). However, as the name of our
-            laboratory indicates, we study systems that apply interaction
-            technology, so the scope of our research is very broad, and there
-            are no restrictions on our research topics.
-          </p>
+          <div className="flex flex-wrap justify-between">
+            <div className="w-full md:w-2/5 p-5">
+              <h1 className="text-5xl font-bold mt-4 mb-12 z-5 text-red-800">
+                Intelligent Space
+              </h1>
+              <p class="text-xl font-light leading-relaxed mt-6 mb-4 text-gray-800">
+                Interaction can take many forms. In our laboratory, we mainly
+                focus on human-to-human interaction, human-to-non-human
+                interaction, and non-human-to-human interaction via artificial
+                systems (non-human means anything that can interact with
+                non-humans, including machines, robots, animals, etc.). However,
+                as the name of our laboratory indicates, we study systems that
+                apply interaction technology, so the scope of our research is
+                very broad, and there are no restrictions on our research
+                topics.
+              </p>
+            </div>
+            <div className="w-full h-128 md:w-3/5 drop-shadow-lg relative items-center overflow-hidden">
+              <div className="flex flex-row flex-nowrap items-center justify-center">
+                <div class="hexagon hexagon-1 z-10 bg-hexa1 w-80 h-80 top-1/2"></div>
+                <div className="flex-col">
+                  <div class="hexagon hexagon-1 bg-hexa3 w-48 h-48"></div>
+                  <div class="hexagon hexagon-1 bg-hexa2 w-64 h-64 mt-10"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <section className="mb-32 text-gray-800 text-center">
           <CustomTabs />

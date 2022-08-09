@@ -1,0 +1,23 @@
+.hexagon {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  /* background-image: url(http://placekitten.com/240/240); */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.hexagon-1 {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  /* background-image: url(http://placekitten.com/240/240); */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.hexagon:hover {
+  background-size: 90%;
+}

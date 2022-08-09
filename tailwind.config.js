@@ -33,6 +33,9 @@ module.exports = {
       party: "url('https://i.upanh.org/2022/08/09/mainbg_03.jpg')",
       group: "url('https://i.upanh.org/2022/08/09/mainbg_02.jpg')",
       adventure: "url('https://i.upanh.org/2022/08/09/sensei_act01.jpg')",
+      hexa1: "url('https://i.upanh.org/2022/08/09/biwakox_hexa.png')",
+      hexa2: "url('https://i.upanh.org/2022/08/09/prusa_printer_edit.png')",
+      hexa3: "url('https://i.upanh.org/2022/08/09/cataro_hexa_sm.png')",
     },
     extend: {
       spacing: {
@@ -41,6 +44,9 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "2rem",
+      },
+      height: {
+        128: "32rem",
       },
     },
   },
