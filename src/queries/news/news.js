@@ -1,6 +1,4 @@
-import {
-  gql
-} from "@apollo/client";
+import { gql } from "@apollo/client";
 
 const NEWS_QUERY = gql`
   query NewsArticle {
@@ -10,6 +8,7 @@ const NEWS_QUERY = gql`
           slug
           title
           summary
+          update_time
           public_thumbnail
         }
       }

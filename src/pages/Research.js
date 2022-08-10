@@ -37,8 +37,8 @@ export default function Research() {
             </div>
           </div>
         </div>
-        <div class="relative">
-          <div class="area -z-10 p-10">
+        <div class="relative p-10">
+          <div class="area -z-10">
             <ul class="circles -z-10">
               <li></li>
               <li></li>
