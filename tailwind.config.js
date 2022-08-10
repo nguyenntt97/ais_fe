@@ -37,6 +37,9 @@ module.exports = {
       hexa2: "url('https://i.upanh.org/2022/08/09/prusa_printer_edit.png')",
       hexa3: "url('https://i.upanh.org/2022/08/09/cataro_hexa_sm.png')",
     },
+    backgroundSIze: {
+      90: "90%",
+    },
     extend: {
       spacing: {
         128: "32rem",

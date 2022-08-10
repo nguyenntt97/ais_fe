@@ -55,8 +55,8 @@ const DEFAULT_HEADERS = [
 ];
 const DEFAULT_CONTENTS = [
   <>
-    <h2 className="text-3xl font-bold mt-4 mb-12 text-center text-red-800">
-      Individual Topics
+    <h2 className="text-3xl w-full ml-5 font-bold mt-4 mb-12 text-left text-red-800">
+      Individual Research Themes &amp; Projects
     </h2>
     <IndiTopicSection />
   </>,
@@ -79,7 +79,7 @@ export default function ResearchTabs(props) {
       >
         {headers.map((h, i) => genTabHeader(h, i === 0))}
       </ul>
-      <div className="tab-content" id="tabs-tabContent">
+      <div className="tab-content p-5" id="tabs-tabContent">
         {contents.map((c, i) => genTabContent(headers[i], c, i === 0))}
       </div>
     </>

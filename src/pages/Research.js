@@ -69,7 +69,7 @@ export default function Research() {
                 topics.
               </p>
             </div>
-            <div className="w-full h-128 md:w-3/5 drop-shadow-lg relative items-center overflow-hidden">
+            <div className="w-full h-128 md:w-3/5 drop-shadow-xl relative items-center overflow-hidden">
               <div className="flex flex-row flex-nowrap items-center justify-center">
                 <div class="hexagon hexagon-1 z-10 bg-hexa1 w-80 h-80 top-1/2"></div>
                 <div className="flex-col">

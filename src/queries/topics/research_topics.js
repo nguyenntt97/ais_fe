@@ -6,9 +6,12 @@ const TOPICS_QUERY = gql`
       data {
         attributes {
           slug
-          topic_name
-          description
+          title
+          title_en
+          summary
+          summary_en
           domain
+          public_thumbnail
         }
       }
     }
