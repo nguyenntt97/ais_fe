@@ -48,7 +48,7 @@ const genItem = ({ data: { newsArticles } }) => {
 
 export default function IndiTopicSection() {
   return (
-    <div className="grid lg:grid-cols-3 gap-n   xl:gap-x-10 mx-5">
+    <div className="grid lg:grid-cols-3 gap-n xl:gap-x-10 mx-5">
       <Query query={TOPICS_QUERY} id={null}>
         {genItem}
       </Query>
