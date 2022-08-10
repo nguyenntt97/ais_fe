@@ -73,7 +73,7 @@ export default function NavBarCore(props) {
           <NavButton name={"Home"} icon={HomeIcon} href={"/"} />
           <NavButton name={"News"} icon={BlogIcon} href={"/news"} />
           <NavButton name={"Research"} icon={ResearchIcon} href={"/research"} />
-          <NavButton name={"About"} icon={AboutIcon} href={"/about"} />
+          <NavButton name={"About"} icon={AboutIcon} href={"/about"} disabled />
           <NavButton
             name={"Internal"}
             icon={InternalIcon}
@@ -82,6 +82,7 @@ export default function NavBarCore(props) {
           <div className="flex justify-center items-center content-center">
             <button
               type="button"
+              disabled
               className="block ml-5 px-5 py-2 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-white hover:text-gray-500 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
             >
               Apply
